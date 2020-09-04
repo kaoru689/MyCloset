@@ -1,24 +1,30 @@
 # README
+アプリケーション名:
+　〜My Closet〜
+アプリケーション概要と制作背景:
+ 自分のクローゼットの中身を外出先でも見れるようにしました。自分の持っている洋服の画像を貼り付けて一覧で見ることができ、アイテム別に表示、季節別に表示だったりの絞り込み機能も付けました。
+ 洋服が好きなのですが、洋服をお店に買いに行った時、例えはこのトップスと合う家にあるスカートは何だろう？と思うことがあり、コーディネートを想像するよりも実際に写真で見て選べたら良いなと思い、このアプリを作りました。
+ 似たような洋服もうっかり買わずに済むはずです。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+本番環境：
 
-Things you may want to cover:
+工夫したポイント:
 
-* Ruby version
+使用技術(開発環境):
 
-* System dependencies
+課題や今後実装したい機能:
 
-* Configuration
 
-* Database creation
+# テーブル設計
 
-* Database initialization
+## items テーブル
 
-* How to run the test suite
+| Column           |  Type      | Options                        |
+| --------------   | ------     | ---------------------          |
+| image            | string     | null: false                    |
+| memo             | text       |                                |
+| type_id          | integer    | null: false                    |
+| season1_id       | integer    | null: false                    |
+| season2_id       | integer    |                                |
+| season3_id       | integer    |                                |
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
